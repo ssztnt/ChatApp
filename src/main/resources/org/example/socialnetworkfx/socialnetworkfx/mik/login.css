@@ -1,0 +1,139 @@
+/* Background of the login screen */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #e5d6f5, #ffffff);
+}
+
+/* GridPane with form fields */
+GridPane {
+    -fx-background-color: transparent;
+}
+
+/* TextField and PasswordField styling */
+/* TextField and PasswordField styling - Simple and clean with rounded corners */
+TextField, PasswordField {
+    -fx-background-color: white; /* Clean white background */
+    -fx-border-color: transparent; /* No border visible */
+    -fx-border-width: 0; /* No visible border */
+    -fx-padding: 5px 10px; /* Padding inside the text field */
+    -fx-font-size: 14px; /* Font size for readability */
+    -fx-font-family: 'Verdana', sans-serif; /* Simple font */
+    -fx-text-fill: #333333; /* Dark text color */
+    -fx-background-radius: 20px; /* Rounded corners for a smooth, modern look */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 2, 0.5, 1, 1); /* Subtle shadow */
+}
+
+/* Focused state for TextField and PasswordField */
+TextField:focused, PasswordField:focused {
+    -fx-background-color: rgba(124, 48, 218, 0.1); /* Pale mauve background when focused */
+    -fx-text-fill: #7c30da; /* Dark purple text when focused */
+    -fx-background-radius: 20px; /* Ensure rounded corners on focus */
+    -fx-effect: none; /* Remove shadow effect when focused */
+}
+
+/* Placeholder text styling */
+TextField .text-input, PasswordField .text-input {
+    -fx-opacity: 0.6; /* Slightly transparent placeholder text */
+}
+
+
+/* Button styling */
+Button {
+    -fx-background-color: linear-gradient(to bottom, #af7ac5, #8e44ad); /* Gradient from light to dark purple */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 15px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.15), 4, 0, 2, 2);
+}
+
+Button:hover {
+    -fx-background-color: linear-gradient(to bottom, #8e44ad, #6c3483); /* Darker purple on hover */
+}
+
+Button:pressed {
+    -fx-background-color: #6c3483; /* Deep purple when pressed */
+}
+
+/* Label styling for the welcome message */
+Label {
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-text-fill: #4a235a; /* Dark purple for text */
+}
+
+#userNameField {
+    -fx-font-family: Verdana;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4a235a; /* Dark purple */
+}
+
+Label[text="Welcome to Yahoo Messenger!"] {
+    -fx-font-family: "Dubai Bold";
+    -fx-font-size: 24px;
+    -fx-text-fill: #9400d3; /* Yahoo's purple */
+}
+
+/* Error message styling */
+#errorMessage {
+    -fx-text-fill: red;
+    -fx-font-size: 15px;
+    -fx-font-family: "Century Gothic Bold";
+    -fx-alignment: CENTER_RIGHT;
+}
+
+/* Profile image styling */
+ImageView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0.5, 2, 2);
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px;
+    -fx-padding: 4px;
+}
+
+/* Hover effect for table row in friend list */
+.table-row-cell:hover {
+    -fx-background-color: rgba(174, 129, 189, 0.3); /* Light purple on hover */
+}
+
+/* Styling for "Online" label */
+Label[text="Online"] {
+    -fx-text-fill: #27ae60; /* Green color for online status */
+    -fx-font-weight: bold;
+}
+/* Only customize the box part of the checkbox */
+CheckBox .box {
+    -fx-background-color: white; /* Default white background for the box */
+    -fx-background-radius: 50%; /* Make the box round */
+    -fx-padding: 5px; /* Space inside the checkbox for the round effect */
+    -fx-border-width: 0px; /* No border around the box */
+}
+
+/* When the checkbox is selected (checked), apply gradient to the box */
+CheckBox:selected .box {
+    -fx-background-color: linear-gradient(to bottom, #8e44ad, #6c3483); /* Gradient from light purple to dark purple */
+}
+
+/* Change the checkmark color when the checkbox is checked */
+CheckBox:selected .mark {
+    -fx-background-color: white; /* No background for the checkmark */
+    -fx-background-radius: 50%; /* Keep the checkmark round if needed */
+    -fx-text-fill: white; /* White checkmark */
+}
+
+/* Keep the text color default */
+CheckBox {
+    -fx-text-fill: black; /* Default text color */
+}
+
+/* Hover effect (for box) */
+CheckBox:hover .box {
+    -fx-background-color: rgba(159, 98, 168, 0.6); /* Lighter gradient on hover */
+}
+
+/*!* Focus state (for box) *!*/
+/*CheckBox:focused .box {*/
+/*    -fx-background-color: linear-gradient(to bottom, #8e44ad, #6c3483); !* Gradient when focused *!*/
+/*}*/
+
